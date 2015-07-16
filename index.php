@@ -5,10 +5,6 @@ function __autoload($class_name) {
 $rm = new RemoteMethod\RemoteMethodClient();
 
 $url = 'http://localhost/teste.php';
-$body = '';
 
 $rm->setUrl($url);
 echo $rm->callRemoteMethod('calcula',10,10);
-
-
-//echo file_get_contents($url);
